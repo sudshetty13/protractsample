@@ -1,12 +1,3 @@
-<p align="center">
-<img src= "./images/protractor-typescript-cucumber.png" height=300 alt="titleImage.png"/>
-</p>
-
-<p align="center">
-   <i><strong>This project demonstrates the basic protractor-cucumber-typescript framework project setup.
-</strong></i>
-<p>
-
 ---
 
 
