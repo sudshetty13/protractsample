@@ -17,6 +17,7 @@
     "webdriverJS",
     "gherkin",
     "automation testing"
+    
   ],
   "main": "index.js",
   "scripts": {
