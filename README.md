@@ -7,13 +7,6 @@
 </strong></i>
 <p>
 
-<p align="center">
-<a href="https://circleci.com/gh/igniteram/protractor-cucumber-typescript/tree/master"><img alt="circleCI Status" src="https://circleci.com/gh/igniteram/protractor-cucumber-typescript/tree/master.svg?style=shield"></a>
-<a href="https://david-dm.org/igniteram/protractor-cucumber-typescript"><img alt="dependencies status" src="https://david-dm.org/igniteram/protractor-cucumber-typescript.svg"></a>
-<a href=#contributors><img alt="contributors" src="https://img.shields.io/badge/all_contributors-4-orange.svg"></a>
-<a href="https://opensource.org/licenses/MIT"><img alt="MIT License" src="https://img.shields.io/dub/l/vibe-d.svg"></a>
-</p>
-
 ---
 
 
