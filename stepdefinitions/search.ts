@@ -4,8 +4,12 @@ const { When, Then } = require("cucumber");
 
 const search: SearchPageObject = new SearchPageObject();
 
-When(/^I type "(.*?)"$/, async (text) => {
-    await search.searchTextBox.sendKeys(text);
+// When(/^I type "(.*?)"$/, async (text) => {
+//     await search.searchTextBox.sendKeys(text);
+// });
+
+When(/^I type "(.*)"$/, async function(s:string) {
+     await search.searchTextBox.sendKeys(s);
 });
 
 When(/^I click on search button$/, async () => {
@@ -14,4 +18,5 @@ When(/^I click on search button$/, async () => {
 
 Then(/^I click on google logo$/, async () => {
     await search.logo.click();
+    browser.sleep(5000);
 });

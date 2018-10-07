@@ -5,6 +5,8 @@ import { config } from "../config/config";
 
 BeforeAll({timeout: 100 * 1000}, async () => {
     await browser.get(config.baseUrl);
+    await browser.waitForAngularEnabled(true)
+    
 });
 
 After(async function(scenario) {

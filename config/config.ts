@@ -9,7 +9,7 @@ export const config: Config = {
 
     SELENIUM_PROMISE_MANAGER: false,
 
-    baseUrl: "https://www.google.com",
+    baseUrl: "https://www.ryanair.com/ie/en/",
 
     capabilities: {
         browserName: "chrome",
@@ -19,7 +19,7 @@ export const config: Config = {
     frameworkPath: require.resolve("protractor-cucumber-framework"),
 
     specs: [
-        "../../features/*.feature",
+        "../../features/flight.feature",
     ],
 
     onPrepare: () => {
