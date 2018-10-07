@@ -11,16 +11,39 @@ export const config: Config = {
 
     baseUrl: "https://www.ryanair.com/ie/en/",
 
-    capabilities: {
-        browserName: "chrome",
-    },
+    // capabilities: {
+    //     browserName: "chrome",
+    //     maxInstances: 5,
+        
+    // },
+
+    multiCapabilities: [
+        {
+            shardTestFiles: true,
+            maxInstances: 1,
+            sequential: true,
+            browserName: 'chrome',
+            specs: ['"../../features/flight.feature"']
+        },
+        {
+            shardTestFiles: true,
+            maxInstances: 1,
+            sequential: true,
+            browserName: 'chrome',
+            specs: ['"../../features/flightx.feature"',
+            ]
+        },
+    ],
+    
+    maxSessions:5,
+    directConnect: true,
 
     framework: "custom",
     frameworkPath: require.resolve("protractor-cucumber-framework"),
 
-    specs: [
-        "../../features/flight.feature",
-    ],
+    // specs: [
+    //     "../../features/flight.feature",
+    // ],
 
     onPrepare: () => {
         browser.ignoreSynchronization = true;
